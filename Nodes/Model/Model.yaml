@@ -1,0 +1,34 @@
+Name: Model
+Id: g=42e4eb754974cfed0de847d05037414b
+Type: FolderType
+Children:
+- Name: Ingredient01
+  Id: g=be8ccba71ef90ac5a8d29d2ddc8152d5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Ingredient02
+  Id: g=76ae8a4c949c27dfe89353ce444cfd77
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Ingredient03
+  Id: g=f06dbe51d3ed1c53c5e4acaa56fc56bc
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: MotorAlarm
+  Id: g=552dc979b12903c32bd2a94cd22e0d79
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Temperature
+  Id: g=7872c0fc11ebdb4e3c4e767e707d5934
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: ToggleStyleSheet
+  Id: g=10f1f1cf8772bb80f9a0b3149dad7838
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

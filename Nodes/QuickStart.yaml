@@ -1,0 +1,83 @@
+Name: QuickStart
+Id: g=5a866b08b8d3c3a8e07455dd8f8c8a73
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=c15ff0808641f2f0303e3c372068de59
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: PasswordPolicy
+  Id: g=82ceac313b50e08b63ad0f9431bf0fd5
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=451ecbd2d4a479fe8e12576627c3300a
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=618d88cca652a64a2ab9b45df87edd02
+    Type: PropertyType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=383b16763aee16d394b49e87a9829fe5
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=a1e49a446f59053baf2533a9297e3ffa
+    Type: PropertyType
+    DataType: Byte
+    Value: 8
+- Name: Locales
+  Id: g=df8221cc33ff245f2bf6045b413203c8
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- Name: LocaleFallbackList
+  Id: g=bc74177611e1c422ee4ffe82f5c7b4d6
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: DefaultUserFolder
+  Id: g=785263cfcc4efb0068c9c29a30c59013
+  Type: NodePointer
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"d2b12220f7f1ddb9a44dccaf56ea46d7","Namespace":7}
+  Children:
+  - Name: Kind
+    Id: g=53c4ada9391ccc9d871ed77934cafdc4
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"Id":61}
+- Name: RecipeSchema1
+  Id: g=93cf367b4e7541e4d9b43d1a6df6bdc0
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"7ddad395e89a3c6285fab7947ba0d6bf","Namespace":7}
+  Children:
+  - Name: Kind
+    Id: g=e9ba8c5da15fc8e7f95f22525713db67
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"7ddad395e89a3c6285fab7947ba0d6bf","Namespace":7}

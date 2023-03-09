@@ -1,0 +1,50 @@
+Name: Alarms
+Id: g=77994bd41bcfe631b9aac15d06e09367
+Type: FolderType
+Children:
+- Name: DigitalAlarm1
+  Id: g=481c80f1306a78f348702f2d7da9091c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=c9d0abcc3170fa12bd9285d028d7d911
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=d297636d918bdc122718d8ae0abd2f49
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=58528db9c9b3a76a65aba2112dfddf59
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/MotorAlarm"
+      Children:
+      - Name: Mode
+        Id: g=cd994e1328d547f5eb5add0121a54c24
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=5e35447a60e61446ca1f7bf8a28528e8
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=e04621b4a78075f6471c5a8787448be1
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Motor1 Alarm"}
